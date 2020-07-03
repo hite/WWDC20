@@ -114,6 +114,14 @@ struct SimpleFavoriteContent: LibraryContentProvider {
             matchingSignature: "s"
         )
     }
+    @LibraryContentBuilder
+    func modifiers(base: Text) -> [LibraryItem] {
+        LibraryItem(
+            base.addClassName(comments_clsName),
+            title: "Comment Blue Style",
+            category: .effect
+        )
+    }
 }
 /// 红心在右侧，居中
 struct SimpleHeart: View {
