@@ -33,16 +33,17 @@ struct ProductItemView: View {
             VStack(spacing:0){
                 ZStack{
                     Image(item.image)
-                }.frame(height: 178, alignment: .center)
+                }.frame(minWidth:0,maxWidth: .infinity, minHeight: 0, maxHeight: 178)
                 if item.desc != nil {
                     Text(item.desc!).addClassName(desc_clsName)
                         .frame(minWidth:0,maxWidth: .infinity, minHeight: 0, maxHeight: 22)
                         .background(Color("descBackground"))
                 }
+                Spacer()
             }.frame(height: 200, alignment: .center)
             .background(Color("itemBackground"))
 
-            Text(item.name).font(Font.system(size: 14)).padding(.vertical, 15)
+            Text(item.name).font(Font.system(size: 14)).padding(.vertical, 8)
             if item.tags.count > 0 {
                 HStack{
                     ForEach(item.tags, id: \.self) { tag in
@@ -51,9 +52,10 @@ struct ProductItemView: View {
                     Spacer()
                 }
             }
+            Spacer()
             HStack{
-                HStack(alignment:.bottom){
-                    Text(fp(item.price)).font(Font.system(size: 16)).foregroundColor(Color("tagTextColor"))
+                HStack(alignment:.bottom, spacing: 0){
+                    Text(fp(item.price)).font(Font.system(size: 16)).foregroundColor(Color("tagTextColor")).padding(0)
                     if item.sellPrice > 0 {
                         Text(fp(item.sellPrice)).strikethrough().font(Font.system(size: 12)).foregroundColor(.secondary)
                     }
@@ -67,6 +69,6 @@ struct ProductItemView: View {
 
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItemView(item: Products[1])
+        ProductItemView(item: Products[3])
     }
 }

@@ -17,6 +17,8 @@
 		48BAF6C124B2C39A002ABDE5 /* ComplexRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAF6C024B2C39A002ABDE5 /* ComplexRow.swift */; };
 		48C261FE24B96D2300103749 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C261FD24B96D2300103749 /* Products.swift */; };
 		48C2620024B9713B00103749 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C261FF24B9713B00103749 /* ProductItemView.swift */; };
+		48C2620324B98C4700103749 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2620224B98C4700103749 /* ProductRowView.swift */; };
+		48C2620524B9980100103749 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2620424B9980100103749 /* ProductList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		48BAF6C024B2C39A002ABDE5 /* ComplexRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexRow.swift; sourceTree = "<group>"; };
 		48C261FD24B96D2300103749 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		48C261FF24B9713B00103749 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		48C2620224B98C4700103749 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		48C2620424B9980100103749 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				48C261FD24B96D2300103749 /* Products.swift */,
 				48C261FF24B9713B00103749 /* ProductItemView.swift */,
+				48C2620224B98C4700103749 /* ProductRowView.swift */,
+				48C2620424B9980100103749 /* ProductList.swift */,
 			);
 			path = Session10149;
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 				48BAF6AD24AE0A42002ABDE5 /* ContentView.swift in Sources */,
 				48BAF6AB24AE0A42002ABDE5 /* WWDC20App.swift in Sources */,
 				48C2620024B9713B00103749 /* ProductItemView.swift in Sources */,
+				48C2620324B98C4700103749 /* ProductRowView.swift in Sources */,
 				48C261FE24B96D2300103749 /* Products.swift in Sources */,
 				48BAF6BD24AED6ED002ABDE5 /* SwiftUI_CSS.swift in Sources */,
 				48BAF6BF24B2BBB3002ABDE5 /* RowItem.swift in Sources */,
 				48BAF6C124B2C39A002ABDE5 /* ComplexRow.swift in Sources */,
+				48C2620524B9980100103749 /* ProductList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
