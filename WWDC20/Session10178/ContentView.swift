@@ -42,60 +42,6 @@ let comments_clsName = CSSStyle([
     .foregroundColor(.blue)
 ])
 
-struct SimpleRow: View {
-    var m: Movie
-    var body: some View {
-        HStack {
-            Image(m.poster)
-                .addClassName(poster_clsName)
-            
-            VStack(alignment: .leading) {
-                Text(m.name)
-                Spacer()
-                Text("\(m.duration)分钟 - \(m.type.rawValue)")
-                    .addClassName(timeInfo_clsName)
-            }
-            .padding(.horizontal, 4)
-            .padding(.vertical, 1)
-            
-            if m.isFavorite {
-                HStack/*@START_MENU_TOKEN@*/{
-                    Spacer()
-                    Image(systemName: "heart.fill").foregroundColor(.red)
-                }/*@END_MENU_TOKEN@*/
-            }
-        }.padding(.vertical, 4)
-    }
-}
-
-struct ComplexRow: View {
-    var m: Movie
-    var body: some View {
-        HStack {
-            Image(m.poster)
-                .addClassName(poster_clsName)
-            
-            VStack(alignment: .leading) {
-                Text(m.name).lineLimit(1)
-                Text("\(m.duration)分钟 - \(m.type.rawValue)")
-                    .addClassName(timeInfo_clsName)
-                Spacer()
-                Text("“\(m.comments!)“").addClassName(comments_clsName)
-            }
-            .padding(.horizontal, 4)
-            .padding(.vertical, 1)
-            
-            if m.isFavorite {
-                
-                VStack /*@START_MENU_TOKEN@*/{
-                    Spacer()
-                    Image(systemName: "heart.fill").foregroundColor(.red)
-                }/*@END_MENU_TOKEN@*/
-            }
-        }.padding(.vertical, 4)
-    }
-}
-
 struct SimpleFavoriteContent: LibraryContentProvider {
     @LibraryContentBuilder
     var views: [LibraryItem] {
@@ -118,7 +64,7 @@ struct SimpleFavoriteContent: LibraryContentProvider {
     func modifiers(base: Text) -> [LibraryItem] {
         LibraryItem(
             base.addClassName(comments_clsName),
-            title: "Comment Blue Style",
+            title: "Comment Style",
             category: .effect
         )
     }
