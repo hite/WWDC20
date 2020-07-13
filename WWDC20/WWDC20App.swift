@@ -11,8 +11,7 @@ import SwiftUI
 struct WWDC20App: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            Text("in debug")
+            ProductList()
         }
     }
 }

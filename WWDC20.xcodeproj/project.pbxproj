@@ -19,6 +19,7 @@
 		48C2620024B9713B00103749 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C261FF24B9713B00103749 /* ProductItemView.swift */; };
 		48C2620324B98C4700103749 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2620224B98C4700103749 /* ProductRowView.swift */; };
 		48C2620524B9980100103749 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2620424B9980100103749 /* ProductList.swift */; };
+		48CFFB2324BAFC99000E091C /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CFFB2224BAFC99000E091C /* BottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		48C261FF24B9713B00103749 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		48C2620224B98C4700103749 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 		48C2620424B9980100103749 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		48CFFB2224BAFC99000E091C /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				48C261FF24B9713B00103749 /* ProductItemView.swift */,
 				48C2620224B98C4700103749 /* ProductRowView.swift */,
 				48C2620424B9980100103749 /* ProductList.swift */,
+				48CFFB2224BAFC99000E091C /* BottomBar.swift */,
 			);
 			path = Session10149;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				48C261FE24B96D2300103749 /* Products.swift in Sources */,
 				48BAF6BD24AED6ED002ABDE5 /* SwiftUI_CSS.swift in Sources */,
 				48BAF6BF24B2BBB3002ABDE5 /* RowItem.swift in Sources */,
+				48CFFB2324BAFC99000E091C /* BottomBar.swift in Sources */,
 				48BAF6C124B2C39A002ABDE5 /* ComplexRow.swift in Sources */,
 				48C2620524B9980100103749 /* ProductList.swift in Sources */,
 			);
@@ -324,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WWDC20/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WWDC20/Session10149/Products.swift WWDC20/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5F3P75AV37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WWDC20/Info.plist;
@@ -346,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WWDC20/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WWDC20/Session10149/Products.swift WWDC20/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5F3P75AV37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WWDC20/Info.plist;

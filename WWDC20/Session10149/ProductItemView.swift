@@ -16,7 +16,7 @@ import SwiftUI
 //20  com.apple.AttributeGraph          0x0000000117bc6231 AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, AGSwiftMetadata const*, bool*, long) + 523
 
 let desc_clsName = CSSStyle([
-    .font(.subheadline),
+    .font(.system(size: 12)),
     .foregroundColor(Color("descTextColor"))
 ])
 
@@ -34,12 +34,15 @@ struct ProductItemView: View {
                 ZStack{
                     Image(item.image)
                 }.frame(minWidth:0,maxWidth: .infinity, minHeight: 0, maxHeight: 178)
-                if item.desc != nil {
-                    Text(item.desc!).addClassName(desc_clsName)
-                        .frame(minWidth:0,maxWidth: .infinity, minHeight: 0, maxHeight: 22)
-                        .background(Color("descBackground"))
-                }
                 Spacer()
+                if item.desc != nil {
+                    HStack {
+                        Text(item.desc!)
+                            .addClassName(desc_clsName).padding(.leading, 4)
+                        Spacer()
+                    }.frame(minWidth:0,maxWidth: .infinity, minHeight: 0, maxHeight: 22)
+                    .background(Color("descBackground"))
+                }
             }.frame(height: 200, alignment: .center)
             .background(Color("itemBackground"))
 
@@ -69,6 +72,10 @@ struct ProductItemView: View {
 
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItemView(item: Products[3])
+        Group {
+            ProductItemView(item: Products[1]).previewLayout(.sizeThatFits).frame(width: 170, height: 280)
+            ProductItemView(item: Product(name: "网易严选商品埃及进口长绒棉毛巾", image: "towel", price: 149, tags: [], sellPrice: 32, desc: nil, spuInfo: nil)).environment(\.sizeCategory, .extraExtraLarge).previewLayout(.sizeThatFits).frame(width: 170, height: 280)// 因为 ProductItemView 没有内部处理 sizeCategory，实际上是无效果的
+
+        }
     }
 }
